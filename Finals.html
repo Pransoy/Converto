@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converto</title>
+    <link rel="stylesheet" href="Finals.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+                                        
+<body>
+                                                <!-- Nav Bar -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Converto</div>
+            <div class="nav-buttons">
+                <button class="nav-btn" data-tool="time">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Time
+                </button>
+                <button class="nav-btn" data-tool="volume">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Volume
+                </button>
+                <button class="nav-btn" data-tool="temperature">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M14 4v17m-4-17v17M6 7h12M6 12h12M6 17h12" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    Temperature
+                </button>
+                <button class="nav-btn" data-tool="calculator">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="4" y="2" width="16" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="8" x2="16" y2="8" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="16" x2="16" y2="16" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Calculator
+                </button>
+                <button class="nav-btn" data-tool="funmath">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    Fun Math
+                </button>
+            </div>
+        </nav>
+    </header>
+
+                                            <!-- Main Content -->
+    <main class="main">
+        <h1 class="title">Welcome to Converto</h1>
+        
+        <div class="tools-grid">
+            <div class="tool-card" data-tool="time">
+                <h2>Time Converter</h2>
+                <p>Convert between different time units</p>
+            </div>
+            <div class="tool-card" data-tool="volume">
+                <h2>Volume Converter</h2>
+                <p>Convert between different volume units</p>
+            </div>
+            <div class="tool-card" data-tool="temperature">
+                <h2>Temperature Converter</h2>
+                <p>Convert between temperature units</p>
+            </div>
+            <div class="tool-card" data-tool="calculator">
+                <h2>Calculator</h2>
+                <p>Perform basic calculations</p>
+            </div>
+        </div>
+
+        <div class="tool-container"></div>
+    </main>
+
+                                                <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Converto</h3>
+                <p>A tool for easy unit conversions and calculations</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li> <a href="#" id="contact-link">Contact Us</a></li>
+                </ul>
+
+            <div id="contact-modal" class="hidden">
+             <section class="contact-section">
+        <button class="close-button" id="close-modal">&times;</button>
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you!</p>
+        </div>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name (optional)</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Comment/Feedback (required)</label>
+                <textarea id="feedback" name="feedback" required placeholder="Share your thoughts with us"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Feedback</button>
+        </form>
+        <div class="thank-you-message">
+            Thank You! Your comments have been sent!
+        </div>
+    </section>
+</div>
+
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>follow us on:</p>
+                
+                <br>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Josef.Cabatingan" target="_blank"  class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/j.pranzz" target="_blank"  class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Converto. All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+    <script src="Finals.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Converto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Finals.css">
+</head>
+<body>
+    <div class="about-container">
+        <header class="about-header">
+            <h1>Meet Our Team</h1>
+            <p>The passionate individuals behind Converto</p>
+        </header>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="franz.jpg" alt="Josef Franz" class="team-card-image">
+                <div class="team-card-content">
+                    <h2 class="team-card-name">Josef Franz Cabatingan</h2>
+                    <p class="team-card-role">Lead Developer - HTML,CSS,JS</p>
+                    <p class="team-card-contribution">Created the core conversion algorithms and designed the calculator functionality</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="kobe.jpg" alt="Kobe Mendoza" class="team-card-image">
+                <div class="team-card-content">
+                    <h2 class="team-card-name">Kobe Mendoza</h2>
+                    <p class="team-card-role">Javascript</p>
+                    <p class="team-card-contribution"></p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="cabulao.jpg" alt="" class="team-card-image">
+                <div class="team-card-content">
+                    <h2 class="team-card-name">Jr Cabulao</h2>
+                    <p class="team-card-role">HTML</p>
+                    <p class="team-card-contribution"></p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="berezo.jpg" alt="" class="team-card-image">
+                <div class="team-card-content">
+                    <h2 class="team-card-name">Berezo</h2>
+                    <p class="team-card-role">HTML</p>
+                    <p class="team-card-contribution"></p>
+                </div>
+            </div>
+        </div>
+
+        <a href="Finals.html" class="back-to-home">Back to Home</a>
+    </div>
+
+    <script type="module">
+        import { Animations } from 'Finals.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.team-card');
+            
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    Animations.fadeIn(card, 500);
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
